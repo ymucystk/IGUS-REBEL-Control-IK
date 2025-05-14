@@ -469,6 +469,9 @@ export default function Home(props) {
       return angle
     }
     const amari = angle % 180
+    if(amari === 0){
+      return amari
+    }else
     if(amari < 0){
       return (180 + amari)
     }else{
